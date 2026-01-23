@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 align="center">College Admission Portal</h2>
+    <h3>Personal Details</h3>
+    <form>
+        <label for="FullName">FullName:</label>
+        <br>
+        <input type="text" name="Name">
+
+        <br>
+        <label for="Gender">Gender</label>
+        <br>
+    
+        <input type="radio" name="gender">
+        <label>Male</label>
+        
+        <input type="radio" name="gender">
+        <label>Female</label>
+
+        <input type="radio" name="gender">
+        <label>Other</label>
+        <br>
+
+        <label>Date of Birth</label>
+        <br>
+        <input type="date" name="DOB">
+        <br>
+        
+        <label>Mobile</label>
+        <br>
+        <input type="text" name="mobilenumber">
+        <br>
+
+        <h3>Course Selection:</h3>
+        <label for="course">Choose a course</label>
+        <select id="course" name="course" required>
+            <option value="Stack">MERN Stack</option>
+            <option value="Cyber">Cyber Security</option>
+            <option value="Cloud">Cloud Computing</option>
+        </select>
+        <br>
+
+        <label>Skills Known:</label>
+        <br>
+        <input type="checkbox" name="Skills">
+        <label>HTML</label>
+
+        <input type="checkbox" name="Skills">
+        <label>CSS</label>
+
+        <input type="checkbox" name="Skills">
+        <label>JS</label>
+
+        <h3>Address</h3>
+        <input type="text" name="Address">
+        <br>
+
+        <h3>Document Upload</h3>
+        <label>Upload Photo: </label>
+        <button>Choose File</button>
+        <br>
+        
+        <label>Uplaod ID Proof: </label>
+        <button>Choose File</button>
+
+        <h3>Preferences</h3>
+        <label>Preferrred Batch Time:</label>
+        <br>
+        <input type="time" name="BatchTime">
+        <br>
+
+        <label>Declaration</label>
+        <br>
+        <input type="checkbox" name="Declaration">
+        <label>I declare that all information is correct</label>
+        <br>
+
+        <button>Submit Application</button>
+        <button>Reset</button>
+        
+    </form>
+</body>
+</html>

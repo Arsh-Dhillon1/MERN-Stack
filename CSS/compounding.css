@@ -1,0 +1,23 @@
+/* .Vegetables.ul{
+    color:orange;
+} */
+
+
+.Fruits{
+    color:chocolate
+}
+
+.Vegetables{
+    color:teal
+}
+.ul{
+    color:rgba(255, 250, 250, 0.67)
+}
+
+.Fruits.ol{
+    color:chartreuse
+}
+
+*{
+    background-color: black;
+}
