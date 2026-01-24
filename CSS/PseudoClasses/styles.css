@@ -29,8 +29,12 @@ li:nth-child(2){
 } 
 */
 
-mydiv{
-    background-color:red !important;
+div{
     border:5px solid brown;
-    /* font-size:40px; */
+    background-color: yellow;
+    text-align:center;
+}
+
+.myp{
+    border:5px solid green;
 }
