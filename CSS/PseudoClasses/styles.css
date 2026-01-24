@@ -1,0 +1,36 @@
+.btn:hover{
+    background-color: azure;
+    color:blue;
+}
+
+li:first-child{
+    /* color:red; */
+    background-color: aqua;
+}
+
+li:nth-child(2){
+    color:greenyellow;
+}
+
+/* .noteclass::after{
+    content:"Nothing much ahahahahhahah";
+    font-size:large;
+    color: orange;
+} */
+
+/* myp::first-letter{
+    color:red;
+    font-size:40px;
+} */
+
+/* myp{
+    background-color:red !important;
+    font-size:40px;
+} 
+*/
+
+mydiv{
+    background-color:red !important;
+    border:5px solid brown;
+    /* font-size:40px; */
+}

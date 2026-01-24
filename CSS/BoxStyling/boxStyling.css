@@ -1,0 +1,12 @@
+.mydiv{
+    border: 2px solid blueviolet;
+    margin: 5vh;
+    padding:100px;
+    visibility: hidden;
+    
+    /* padding: 10px 9px 16px 9px; */
+}
+/* #myspan{
+    border:solid rebeccapurple;
+    display:block; */
+/* } */
