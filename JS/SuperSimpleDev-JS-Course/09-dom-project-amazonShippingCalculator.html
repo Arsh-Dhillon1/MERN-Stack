@@ -10,7 +10,9 @@
     <p class="js-lowOrder">Order under $40 = +$10 shipping</p>
     <p class="js-highOrder">Order over $40 = FREE shipping</p>
     <p></p>
-    <input class="js-input" type="text" placeholder="Cost of order">  
+    <input class="js-input" type="text" placeholder="Cost of order" onkeydown="
+        if(event.key==='Enter') calculateValue();
+    ">  
     <button class="js-button" onclick="
         calculateValue();
     ">Calculate</button>
