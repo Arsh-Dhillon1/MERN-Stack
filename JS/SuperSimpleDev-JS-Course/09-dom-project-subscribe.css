@@ -1,0 +1,24 @@
+body{
+    font-family:Arial;
+}
+
+.js-subscribeButton{
+    background-color: black;
+    color:whitesmoke;
+    border-radius:19px;
+    padding-top:7px;
+    padding-bottom: 7px;
+    padding-left:15px;
+    padding-right:15px;
+    font-weight: 600;
+}
+
+.js-subscribeButton:hover{
+    cursor:pointer;
+    background-color: rgb(61, 60, 60);
+}
+
+.is-subscribed{
+    background-color: white;
+    color:black;
+}
