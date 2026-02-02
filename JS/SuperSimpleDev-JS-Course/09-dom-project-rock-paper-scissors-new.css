@@ -21,6 +21,14 @@ body{
     background-position: center;
 }
 
+.rock-btn:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.rock-btn:active{
+    background-color: aliceblue;
+}
 .paper-btn{
     width:100px;
     height:100px;
@@ -31,6 +39,15 @@ body{
     background-size:50px 50px;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.paper-btn:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.paper-btn:active{
+    background-color: aliceblue;
 }
 
 .scissor-btn{
@@ -45,8 +62,26 @@ body{
     background-position: center;
 }
 
+.scissor-btn:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.scissor-btn:active{
+    background-color: aliceblue;
+}
+
 .reset-btn{
     border:none;
     padding:8px 15px;
     font-weight:550;
+}
+
+.reset-btn:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.reset-btn:active{
+    background-color: grey;
 }
