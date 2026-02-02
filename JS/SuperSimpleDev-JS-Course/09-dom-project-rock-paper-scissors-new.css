@@ -1,0 +1,52 @@
+body{
+    font-family: Arial;
+    color:white;
+    background-color: black;
+}
+
+.myp1{
+    font-size:26px;
+    font-weight:700;   
+}
+
+.rock-btn{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background-color: black;
+    border:2px solid white;
+    background-image:url(images/rock-emoji.png) ;
+    background-size:50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.paper-btn{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background-color: black;
+    border:2px solid white;
+    background-image:url(images/paper-emoji.png) ;
+    background-size:50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.scissor-btn{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    background-color: black;
+    border:2px solid white;
+    background-image:url(images/scissors-emoji.png) ;
+    background-size:50px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.reset-btn{
+    border:none;
+    padding:8px 15px;
+    font-weight:550;
+}
