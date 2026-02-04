@@ -3,11 +3,11 @@ let toDoArray=[];
 function printToPage(){
     let toDoListHTML='';
     for(let i=0;i<toDoArray.length;i++){
-        let html=`<p> 
-        ${toDoArray[i].name}
-        <span>${toDoArray[i].date}</span>
-        <button onclick="deleteTask(${i});">Delete</button>
-         </p>`;
+        let html=`
+        <span class="heading">${toDoArray[i].name}</span>
+        <span class="dateDisplay">${toDoArray[i].date}</span>
+        <button class="deleteButton" onclick="deleteTask(${i});">Delete</button>
+         `;
         toDoListHTML+=html;
     }
     document.querySelector(`.js-container`).innerHTML=toDoListHTML;
