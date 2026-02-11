@@ -8,18 +8,11 @@
 </head>
 <body>
     <p class="myp1">Rock Paper Scissors</p>
-    <button class="js-rockButton rock-btn"  onclick="
-        playGame('Rock');
-    "
-    ></button>
+    <button class="js-rockButton rock-btn"></button>
 
-    <button class="js-paperButton paper-btn" onclick="
-        playGame('Paper');
-    "></button>
+    <button class="js-paperButton paper-btn"></button>
 
-    <button class="js-scissorsButton scissor-btn" onclick="
-        playGame('Scissors');
-    "></button>
+    <button class="js-scissorsButton scissor-btn"></button>
 
     <p class="js-resultPara"></p>
     <p class="js-decisionPara"></p>
@@ -30,6 +23,36 @@
     ">Reset Score</button>
     <!-- <p><a href="./05-cart-quantity.html">Click here</a> to see the final version of the project</p> -->
     <script>
+        document.querySelector(`.js-rockButton`).addEventListener(`click`,()=>{
+            playGame('Rock');
+        });
+
+        document.body.addEventListener(`keydown`,(event)=>{
+            if(event.key==='r' || event.key==='R'){
+                playGame('Rock');
+            }
+        });
+        
+        let paperButton=document.querySelector(`.js-paperButton`).addEventListener(`click`,()=>{
+            playGame('Paper');
+        });
+
+        document.body.addEventListener(`keydown`,(event)=>{
+            if(event.key==='p' || event.key==='P'){
+                playGame('Paper');
+            }
+        });
+        
+        let scissorButton=document.querySelector(`.js-scissorsButton`).addEventListener(`click`,()=>{
+            playGame(`Scissors`);
+        });
+        
+        document.body.addEventListener(`keydown`,(event)=>{
+            if(event.key==='s' || event.key==='S'){
+                playGame('Scissors');
+            }
+        });
+
         let score= JSON.parse(localStorage.getItem('score'));
         if (score === null) {
         score = {

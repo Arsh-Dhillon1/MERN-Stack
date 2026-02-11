@@ -1,3 +1,15 @@
+document.querySelector('.js-button').addEventListener('click',()=>{
+    addToDo();
+    printToPage();
+});
+
+document.body.addEventListener('keydown',(event)=>{
+    if(event.key==='Enter'){
+        addToDo();
+        printToPage();
+    }
+});
+
 let toDoArray=[];
 
 function printToPage(){
@@ -6,11 +18,14 @@ function printToPage(){
         let html=`
         <span class="heading">${toDoArray[i].name}</span>
         <span class="dateDisplay">${toDoArray[i].date}</span>
-        <button class="deleteButton" onclick="deleteTask(${i});">Delete</button>
+        <button class="js-deleteButton deleteButton" onclick="deleteTask(${i});">Delete</button>
          `;
         toDoListHTML+=html;
     }
     document.querySelector(`.js-container`).innerHTML=toDoListHTML;
+    // document.querySelectorAll(`.js-deleteButton`).addEventListener('click',()=>{
+        
+    // });
 }
 
 function addToDo(){
