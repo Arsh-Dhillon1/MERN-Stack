@@ -6,14 +6,26 @@
     <title>Quote Generator</title>
 </head>
 <body>
+    <p class="quote"></p>
+    <p class="author"></p>
+    <button class="js-getQuote">New Quote</button>
     <script>
+        document.querySelector(".js-getQuote").addEventListener(`click`,()=>{
+            getQuote();
+        });
+
         async function getQuote(){
-            const response=await fetch("https://api.quotable.io/random");
-            const data=await response.json();
-            console.log(data.content);
-            console.log(data._id);
+            try{
+                const response=await fetch("https://api.quotable.io/random?tags=philosophy");
+                const data=await response.json();
+                document.querySelector(`.quote`).innerText=data.content;
+                document.querySelector('.author').innerText=data.author;
+            }
+            catch(error){
+                console.log("Something went wrong",error);
+            }
         }
-        getQuote();
+
     </script>
 </body>
 </html>
