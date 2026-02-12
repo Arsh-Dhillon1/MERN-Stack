@@ -22,7 +22,36 @@
             );
         }
 
-        const app=<ChatInput />
+        function ChatMessage(props){
+            const message=props.message;
+            if(props.sender==='user'){
+                return(
+                    <div>
+                        <img src="user.png" width="50px"/>
+                        {message}
+                    </div>
+                );
+            }
+
+            else{
+                return(
+                    <div>
+                        <img src="robot.png" width="50px" />
+                        {message}
+                    </div>
+                );
+            }
+        }
+
+        const app=(
+        <>
+            <ChatInput />
+            <ChatMessage message="hello chatbot" sender="user"/>
+            <ChatMessage message="Hello! How can I help you?" sender="robot"/>
+            <ChatMessage message="can you get me todays date?" sender="user"/>
+            <ChatMessage message="Today is February 12" sender="robot"/>
+        </>
+        );
         ReactDOM.createRoot(container).render(app);
 
     </script>
