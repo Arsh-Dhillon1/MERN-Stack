@@ -12,9 +12,10 @@
     <p class="city"></p>
     <img class="profilepic">
     <button class="js-loadButton">Load User</button>
+    <button class="js-refreshButton">Refresh</button>
     <script>
         async function getUserProfile(){
-            const response= await fetch("https://randomuser.me/api/?nocache=" + Date.now());
+            const response= await fetch("https://randomuser.me/api/?nocache=");
             const data= await response.json();
             const user=data.results[0];
             document.querySelector('.name').innerHTML= user.name.first + " " + user.name.last;
@@ -27,6 +28,10 @@
             getUserProfile();
         });
         
+
+        document.querySelector('.js-refreshButton').addEventListener('click',()=>{
+            getUserProfile();
+        });
     </script>
 </body>
 </html>
